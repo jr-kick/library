@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body>div {
+    margin-top: 40px
+}
+
+#book_maker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#book_maker>div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 10px;
+    row-gap: 5px;
+}
