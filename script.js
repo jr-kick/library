@@ -79,4 +79,5 @@ function removeBook(e) {
     let currentParent = removeBtn.parentNode.parentNode;
     array.splice(currentParent.value, 1);
     refreshPage();
+    console.log('Hello World')
 };
