@@ -1,9 +1,16 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+li {
+    list-style: none;
 }
 
 body>div {
@@ -15,6 +22,9 @@ body>div {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    background-color: brown;
+    padding: 30px;
+    border-radius: 20px;
 }
 
 #book_maker>div {
@@ -22,4 +32,35 @@ body>div {
     grid-template-columns: repeat(2, auto);
     column-gap: 10px;
     row-gap: 5px;
+}
+
+#book_maker>div>input {
+    box-sizing: border-box;
+}
+
+#books {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#books>li>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 20px;
+}
+
+#books>li {
+    margin-top: 30px;
+    background-color: rgb(106, 106, 156);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#books button {
+    background: none;
+    border: none;
+    color: rgb(150, 0, 0);
+    cursor: pointer;
 }
